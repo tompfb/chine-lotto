@@ -21,6 +21,18 @@ include 'script-login.php';
     <link rel="canonical" href="https://www.xn--82c8azatt7d.net/all-articles/" />
     <link rel="alternate" href="https://www.xn--82c8azatt7d.net/all-articles/" hreflang="th-TH" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJD33H7ZXZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KJD33H7ZXZ');
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",

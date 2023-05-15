@@ -47,7 +47,18 @@ include 'script-login.php';
     <link rel="icon" href="../favicon.webp" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../favicon.webp" />
     <?php include('./link.php'); ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJD33H7ZXZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KJD33H7ZXZ');
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -165,18 +176,18 @@ include 'script-login.php';
         </section>
         <section class="main_bg_color my-4">
             <div class="container py-3 bg-fff">
-                <h2>คำถามที่พบบ่อย</h2> 
-                    <h3>หวยหุ้นจีน ออกกี่โมง?</h3>
-                    <p>หวยหุ้นจีนรอบเช้าออกกี่โมง ออกรางวัลในรอบเช้าเวลา 10.30 น หวยหุ้นจีนรอบบ่ายออกกี่โมง หวยหุ้นจีนรอบบ่ายออกรางวัลเวลา 14.00 นตามเวลาไทย </p>
-                </div>
-                <div class="ss_question">
-                    <h3>หวยหุ้นจีนออกวันไหน?</h3>
-                    <p>ตลาดหุ้นจีนเปิดปิดวันจันทร์ - วันศุกร์ ยกเว้นวันเสาร์อาทิตย์ หลายวันหยุดนักขัตฤกษ์ หวยหุ้นจีนออกรางวัล 2 รอบต่อวันตามการปิดของตลาดหุ้นจีน </p>
-                </div>
-                <div class="ss_question">
-                    <h3>หวยหุ้นจีนดูยังไง?</h3>
-                    <p>การออกรางวัลของหวยหุ้นจีน จะใช้ผลจากการปิดทำการ ของตลาดหุ้น Shenzhen Stock ExchangeX โดยจะนำค่า Last กับค่า Change มาใช้ออกรางวัลเลขบนและเลขล่าง</p>
-                </div>
+                <h2>คำถามที่พบบ่อย</h2>
+                <h3>หวยหุ้นจีน ออกกี่โมง?</h3>
+                <p>หวยหุ้นจีนรอบเช้าออกกี่โมง ออกรางวัลในรอบเช้าเวลา 10.30 น หวยหุ้นจีนรอบบ่ายออกกี่โมง หวยหุ้นจีนรอบบ่ายออกรางวัลเวลา 14.00 นตามเวลาไทย </p>
+            </div>
+            <div class="ss_question">
+                <h3>หวยหุ้นจีนออกวันไหน?</h3>
+                <p>ตลาดหุ้นจีนเปิดปิดวันจันทร์ - วันศุกร์ ยกเว้นวันเสาร์อาทิตย์ หลายวันหยุดนักขัตฤกษ์ หวยหุ้นจีนออกรางวัล 2 รอบต่อวันตามการปิดของตลาดหุ้นจีน </p>
+            </div>
+            <div class="ss_question">
+                <h3>หวยหุ้นจีนดูยังไง?</h3>
+                <p>การออกรางวัลของหวยหุ้นจีน จะใช้ผลจากการปิดทำการ ของตลาดหุ้น Shenzhen Stock ExchangeX โดยจะนำค่า Last กับค่า Change มาใช้ออกรางวัลเลขบนและเลขล่าง</p>
+            </div>
             </div>
         </section>
     </article>

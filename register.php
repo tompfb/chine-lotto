@@ -3,7 +3,7 @@ include 'script-login.php';
 ?>
 <!DOCTYPE html>
 <html lang="th">
- 
+
 <head>
     <title>สมัคร หวยหุ้นจีน ใช้งานง่าย ทันสมัยและรวดเร็ว บาทละ 1,000 บาท</title>
     <meta name="title" content="สมัคร หวยหุ้นจีน ใช้งานง่าย ทันสมัยและรวดเร็ว บาทละ 1,000 บาท" />
@@ -16,7 +16,7 @@ include 'script-login.php';
     <meta http-equiv="content-type" content="text/html;" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="robots" content="all" /> 
+    <meta name="robots" content="all" />
     <meta name="Author" content="หวยหุ้นจีน">
     <meta name="googlebots" content="all">
     <meta name="audience" content="all">
@@ -47,7 +47,18 @@ include 'script-login.php';
     <link rel="icon" href="../favicon.webp" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../favicon.webp" />
     <?php include('./link.php'); ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJD33H7ZXZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KJD33H7ZXZ');
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",

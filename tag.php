@@ -1,7 +1,7 @@
 <!------- date --------------->
 <?php
 include 'script-login.php';
-function DateThai($strDate) 
+function DateThai($strDate)
 {
     $strYear = date("Y", strtotime($strDate));
     $strMonth = date("n", strtotime($strDate));
@@ -48,31 +48,44 @@ $resultrow = mysqli_fetch_array($allArticle);
     <link rel="canonical" href="https://www.xn--82c8azatt7d.net/tag/<?php echo $tagUrl ?>" />
     <link rel="alternate" href="https://www.xn--82c8azatt7d.net/tag/<?php echo $tagUrl ?>" hreflang="th-TH" />
     <link rel="shortcut icon" href="../favicon.webp" type="image/x-icon" />
-    <link rel="icon" href="../favicon.webp" type="image/x-icon" /> 
+    <link rel="icon" href="../favicon.webp" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../favicon.webp" />
 
     <?php include('./link.php'); ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJD33H7ZXZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KJD33H7ZXZ');
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="application/ld+json"> 
+    <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "หน้าแรก",
-                "item": https://www.xn--82c8azatt7d.net/"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "บทความทั้งหมด",
-                "item": https://www.xn--82c8azatt7d.net/all-articles/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "แท็ก <?php echo $t_name;  ?>"
-            }]
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "หน้าแรก",
+                    "item": https: //www.xn--82c8azatt7d.net/"
+                }, {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "บทความทั้งหมด",
+                    "item": https: //www.xn--82c8azatt7d.net/all-articles/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "แท็ก <?php echo $t_name;  ?>"
+                }
+            ]
         }
     </script>
 
@@ -90,14 +103,14 @@ $resultrow = mysqli_fetch_array($allArticle);
                 </ol>
             </nav>
         </div>
-    </section> 
+    </section>
     <article class="article-container-card">
         <section class="container">
-        <div class="heading-bg-secon">
-            <h1 class="bg-heading">
-                แท็ก : <?php echo $name; ?>
-            </h1>
-        </div>
+            <div class="heading-bg-secon">
+                <h1 class="bg-heading">
+                    แท็ก : <?php echo $name; ?>
+                </h1>
+            </div>
             <div id="loadtable">
                 <?php
                 $lastid = '';
@@ -129,7 +142,7 @@ $resultrow = mysqli_fetch_array($allArticle);
                                         </div>
 
                                         <p class="news-articles-p "><?php echo trim(strip_tags(mb_substr($row['descripion_seo'], 0, 120, 'utf-8'))); ?></p>
-                                     
+
                                     </div>
                                 </a>
 
@@ -138,7 +151,7 @@ $resultrow = mysqli_fetch_array($allArticle);
 
                     <?php
                         $lastid = $row['id'];
-                        $tags =  $t_id; 
+                        $tags =  $t_id;
                     } ?>
                 </div>
                 <div id="remove">
